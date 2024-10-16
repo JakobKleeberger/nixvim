@@ -12,6 +12,7 @@
     ./options.nix
     ./telescope.nix
     ./treesitter.nix
+    ./snippets/luasnip.nix
     ./ui/bufferline.nix
     ./ui/dressing.nix
     ./ui/lualine.nix
