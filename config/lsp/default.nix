@@ -1,13 +1,17 @@
 {
   imports = [ ./none-ls.nix ./fidget.nix ./trouble.nix ];
   plugins = {
+    lsp-format = { enable = true; };
     lsp = {
       enable = true;
       servers = {
         bashls.enable = true;
         nil_ls.enable = true;
-
+        nixd.enable = true;
         gopls.enable = true;
+        tailwindcss.enable = true;
+        tsserver.enable = true;
+
       };
       keymaps = {
         silent = true;
@@ -36,7 +40,8 @@
             action = "code_action";
             desc = "Code Action";
           };
-          "<leader>cr" = { action = "rename"; 
+          "<leader>cr" = {
+            action = "rename";
             desc = "rename";
           };
         };
@@ -58,6 +63,6 @@
         ];
       };
     };
-      rust-tools.enable = true;
+    rust-tools.enable = true;
   };
 }
