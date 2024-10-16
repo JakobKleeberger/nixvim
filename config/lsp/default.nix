@@ -44,20 +44,20 @@
           {
             action = "vim.lsp.codelens.run";
             key = "<leader>cc";
-            desc = "Run Codelens";
+            options.desc = "Run Codelens";
             mode = "n";
             lua = true;
           }
           {
             action = "vim.lsp.codelens.refresh";
             key = "<leader>cC";
-            desc = "Refresh Codelens";
+            options.desc = "Refresh Codelens";
             mode = "n";
             lua = true;
           }
         ];
       };
-      rust-tools.enable = true;
     };
+      rust-tools.enable = true;
   };
 }
