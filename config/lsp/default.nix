@@ -11,6 +11,7 @@
     };
     lsp = {
       enable = true;
+      capabilities = "offsetEncoding = 'utf-8'";
       servers = {
         bashls.enable = true;
         nil_ls.enable = true;
