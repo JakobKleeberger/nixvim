@@ -5,6 +5,7 @@
     ./coding/mini-pairs.nix
     ./coding/mini-surround.nix
     ./editor/gitsigns.nix
+    ./editor/lazygit.nix
     ./editor/neo-tree.nix
     ./lsp
     ./options.nix
