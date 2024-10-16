@@ -2,6 +2,7 @@
   imports = [
     ./none-ls.nix
     ./fidget.nix
+    ./lspkind.nix
     ./trouble.nix
   ];
   plugins = {
@@ -16,8 +17,16 @@
         nixd.enable = true;
         gopls.enable = true;
         tailwindcss.enable = true;
-        ts_ls.enable = true;
-
+        ts_ls = {
+          enable = true;
+          autostart = true;
+          filetypes = [
+            "javascript"
+            "javascriptreact"
+            "typescript"
+            "typescriptreact"
+          ];
+        };
       };
       keymaps = {
         silent = true;
