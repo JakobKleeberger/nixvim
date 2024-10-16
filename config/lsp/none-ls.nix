@@ -14,4 +14,10 @@
       };
     };
   };
+  keymaps = [{
+    key = "<leader>cf";
+    action = "vim.lsp.buf.format";
+    options.desc = "Format File";
+    lua = true;
+  }];
 }
