@@ -15,13 +15,16 @@
     ./ui/dressing.nix
     ./ui/lualine.nix
     ./ui/mini-icons.nix
-    ./ui/noice.nix
     ./ui/mini-indentscope.nix
+    ./ui/noice.nix
     ./ui/notify.nix
     ./utils/whichkey.nix
   ];
 
-  colorschemes.gruvbox.enable = true;
+  colorschemes.gruvbox = { enable = true; settings = {
+        transparent_mode = true;
+      };
+};
 
   globals.mapleader = " ";
 
