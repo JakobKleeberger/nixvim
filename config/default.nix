@@ -4,6 +4,7 @@
     ./cmp.nix
     ./coding/mini-pairs.nix
     ./ui/bufferline.nix
+    ./coding/mini-surround.nix
     ./lsp
     ./options.nix
     ./telescope.nix
