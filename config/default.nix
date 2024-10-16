@@ -11,6 +11,7 @@
     ./treesitter.nix
     ./ui/noice.nix
     ./ui/lualine.nix
+    ./ui/notify.nix
     ./utils/whichkey.nix
   ];
 
