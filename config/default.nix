@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   # Import all your configuration modules here
   imports = [
@@ -21,11 +22,13 @@
     ./utils/whichkey.nix
   ];
 
-  colorschemes.gruvbox = { enable = true; settings = {
-        transparent_mode = true;
-      };
-};
+  extraPackages = with pkgs; [ ripgrep ];
 
-  globals.mapleader = " ";
+  colorschemes.gruvbox = {
+    enable = true;
+    settings = {
+      transparent_mode = true;
+    };
+  };
 
 }

@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   plugins.none-ls = {
     enable = true;
@@ -7,17 +8,22 @@
         # ktlint.enable = true;
       };
       formatting = {
-        # gofmt.enable = true;
-        # goimports.enable = true;
+        nixfmt = {
+          enable = true;
+          package = pkgs.nixfmt-rfc-style;
+        };
+        gofmt.enable = true;
+        goimports.enable = true;
         # ktlint.enable = true;
-        nixfmt.enable = true;
       };
     };
   };
-  keymaps = [{
-    key = "<leader>cf";
-    action = "vim.lsp.buf.format";
-    options.desc = "Format File";
-    lua = true;
-  }];
+  keymaps = [
+    {
+      key = "<leader>cf";
+      action = "vim.lsp.buf.format";
+      options.desc = "Format File";
+      lua = true;
+    }
+  ];
 }

@@ -9,7 +9,11 @@
           "neo-tree"
         ];
         disabledFiletypes = {
-          statusline = ["startup" "alpha" "ministarter"];
+          statusline = [
+            "startup"
+            "alpha"
+            "ministarter"
+          ];
         };
         theme = "gruvbox";
       };

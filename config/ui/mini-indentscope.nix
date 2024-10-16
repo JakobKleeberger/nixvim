@@ -1,5 +1,5 @@
 {
-    plugins.mini = {
+  plugins.mini = {
     enable = true;
 
     modules = {
@@ -9,6 +9,6 @@
           try_as_border = true;
         };
       };
-  };
+    };
   };
 }

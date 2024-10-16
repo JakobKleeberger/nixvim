@@ -1,7 +1,13 @@
 {
-  imports = [ ./none-ls.nix ./fidget.nix ./trouble.nix ];
+  imports = [
+    ./none-ls.nix
+    ./fidget.nix
+    ./trouble.nix
+  ];
   plugins = {
-    lsp-format = { enable = true; };
+    lsp-format = {
+      enable = true;
+    };
     lsp = {
       enable = true;
       servers = {
@@ -10,7 +16,7 @@
         nixd.enable = true;
         gopls.enable = true;
         tailwindcss.enable = true;
-        tsserver.enable = true;
+        ts_ls.enable = true;
 
       };
       keymaps = {
