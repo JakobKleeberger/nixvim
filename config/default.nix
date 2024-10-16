@@ -12,6 +12,7 @@
     ./telescope.nix
     ./treesitter.nix
     ./ui/bufferline.nix
+    ./ui/dressing.nix
     ./ui/lualine.nix
     ./ui/mini-icons.nix
     ./ui/noice.nix
