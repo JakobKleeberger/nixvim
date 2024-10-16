@@ -22,6 +22,18 @@
           desc = "Find text";
         };
       };
+      "<C-p>" = {
+        action = "git_files";
+        options.desc = "Search git files";
+      };
+      "<leader>gc" = {
+        action = "git_commits";
+        options.desc = "Commits";
+      };
+      "<leader>gs" = {
+        action = "git_status";
+        options.desc = "Status";
+      };
     };
   };
 }
