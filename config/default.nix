@@ -3,16 +3,18 @@
   imports = [
     ./cmp.nix
     ./coding/mini-pairs.nix
-    ./ui/bufferline.nix
     ./coding/mini-surround.nix
     ./editor/gitsigns.nix
+    ./editor/neo-tree.nix
     ./lsp
     ./options.nix
     ./telescope.nix
-    ./editor/neo-tree.nix
     ./treesitter.nix
-    ./ui/noice.nix
+    ./ui/bufferline.nix
     ./ui/lualine.nix
+    ./ui/mini-icons.nix
+    ./ui/noice.nix
+    ./ui/mini-indentscope.nix
     ./ui/notify.nix
     ./utils/whichkey.nix
   ];
