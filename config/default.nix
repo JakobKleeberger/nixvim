@@ -5,6 +5,7 @@
     ./coding/mini-pairs.nix
     ./ui/bufferline.nix
     ./coding/mini-surround.nix
+    ./editor/gitsigns.nix
     ./lsp
     ./options.nix
     ./telescope.nix
