@@ -4,8 +4,8 @@
     enable = true;
     sources = {
       diagnostics = {
-        # golangci_lint.enable = true;
-        # ktlint.enable = true;
+        golangci_lint.enable = true;
+        ktlint.enable = true;
       };
       formatting = {
         nixfmt = {
@@ -14,7 +14,8 @@
         };
         gofmt.enable = true;
         goimports.enable = true;
-        # ktlint.enable = true;
+        treefmt.enable = true;
+        ktlint.enable = true;
       };
     };
   };
