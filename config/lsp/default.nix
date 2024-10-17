@@ -18,6 +18,7 @@
         nixd.enable = true;
         gopls.enable = true;
         tailwindcss.enable = true;
+        eslint.enable = true;
         ts_ls = {
           enable = true;
           autostart = true;
