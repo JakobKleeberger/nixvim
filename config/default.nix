@@ -2,25 +2,14 @@
 {
   # Import all your configuration modules here
   imports = [
-    ./cmp.nix
-    ./coding/mini-pairs.nix
-    ./coding/mini-surround.nix
-    ./editor/gitsigns.nix
-    ./editor/lazygit.nix
-    ./editor/neo-tree.nix
+    ./cmp
+    ./coding
+    ./editor
     ./lsp
     ./options.nix
-    ./telescope.nix
-    ./treesitter.nix
-    ./snippets/luasnip.nix
-    ./ui/bufferline.nix
-    ./ui/dressing.nix
-    ./ui/lualine.nix
-    ./ui/mini-icons.nix
-    ./ui/mini-indentscope.nix
-    ./ui/noice.nix
-    ./ui/notify.nix
-    ./utils/whichkey.nix
+    ./snippets
+    ./ui
+    ./utils
   ];
 
   extraPackages = with pkgs; [ ripgrep ];

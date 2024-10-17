@@ -9,6 +9,9 @@
           { name = "path"; }
           { name = "buffer"; }
           { name = "luasnip"; }
+          { name = "rg"; }
+          { name = "nvim_lua"; }
+          { name = "git"; }
         ];
 
         mapping = {
