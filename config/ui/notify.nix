@@ -1,15 +1,12 @@
 {
-  plugins.notify = {
+  plugins.mini = {
     enable = true;
-    stages = "static";
-    timeout = 3000;
+    modules = {
+      notify = {
+        lsp_progress = {
+          enable = false;
+        };
+      };
+    };
   };
-  keymaps = [
-    {
-      key = "<leader>un";
-      action.__raw = "function()
-        require('notify').dismiss({ silent = true, pending = true })
-      end";
-    }
-  ];
 }
