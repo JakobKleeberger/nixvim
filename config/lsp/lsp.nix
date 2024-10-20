@@ -20,6 +20,7 @@
         gopls.enable = true;
         tailwindcss.enable = true;
         eslint.enable = true;
+        html.enable = true;
         ts_ls = {
           enable = true;
           autostart = true;
