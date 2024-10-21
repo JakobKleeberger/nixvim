@@ -18,6 +18,7 @@
           };
         };
         gopls.enable = true;
+        templ.enable = true;
         tailwindcss.enable = true;
         eslint.enable = true;
         html.enable = true;
