@@ -18,6 +18,7 @@
           };
         };
         gopls.enable = true;
+        golangci_lint_ls.enable = true;
         templ.enable = true;
         tailwindcss.enable = true;
         eslint.enable = true;
