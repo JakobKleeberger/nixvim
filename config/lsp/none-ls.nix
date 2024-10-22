@@ -3,10 +3,10 @@
   plugins.none-ls = {
     enable = true;
     sources = {
-      diagnostics = {
-        golangci_lint.enable = true;
-        ktlint.enable = true;
-      };
+      # diagnostics = {
+      #   golangci_lint.enable = true;
+      #   ktlint.enable = true;
+      # };
       formatting = {
         nixfmt = {
           enable = true;
