@@ -9,6 +9,7 @@
       servers = {
         bashls.enable = true;
         nil_ls.enable = true;
+        cssls.enable = true;
         nixd = {
           enable = true;
           settings.options = {
