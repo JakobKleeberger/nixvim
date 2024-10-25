@@ -5,11 +5,17 @@
       enable = true;
       autoEnableSources = true;
       settings = {
+        experimental = {
+          ghost_text = true;
+        };
+        snippet = {
+          expand = "luasnip";
+        };
         sources = [
           { name = "nvim_lsp"; }
+          { name = "luasnip"; }
           { name = "path"; }
           { name = "buffer"; }
-          { name = "luasnip"; }
           { name = "rg"; }
           { name = "nvim_lua"; }
           { name = "git"; }
@@ -19,29 +25,8 @@
           "<C-j>" = "cmp.mapping.select_next_item()";
           "<C-k>" = "cmp.mapping.select_prev_item()";
 
-          "<Tab>" = ''
-            cmp.mapping(function(fallback)
-              if cmp.visible() then
-                cmp.select_next_item()
-              elseif luasnip.expand_or_jumpable() then
-                luasnip.expand_or_jump()
-              else
-                fallback()
-              end
-            end, { "i", "s" })
-          '';
-
-          "<S-Tab>" = ''
-            cmp.mapping(function(fallback)
-              if cmp.visible() then
-                cmp.select_prev_item()
-              elseif luasnip.locally_jumpable(-1) then
-                luasnip.jump(-1)
-              else
-                fallback()
-              end
-            end, { "i", "s" })
-          '';
+          "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+          "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
 
           "<C-e>" = "cmp.mapping.abort()";
           "<C-f>" = "cmp.mapping.scroll_docs(4)";
