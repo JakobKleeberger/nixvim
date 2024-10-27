@@ -8,7 +8,6 @@
     ./mini-indentscope.nix
     ./noice.nix
     ./notify.nix
-    ./precognition.nix
     ./telescope.nix
   ];
 }
