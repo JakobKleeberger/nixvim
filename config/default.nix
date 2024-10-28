@@ -14,7 +14,5 @@
 
   extraPackages = with pkgs; [ ripgrep ];
 
-  colorschemes.gruvbox = {
-    enable = true;
-  };
+  colorschemes.kanagawa.enable = true;
 }
