@@ -1,8 +1,5 @@
 {
   plugins = {
-    lsp-format = {
-      enable = true;
-    };
     lsp = {
       enable = true;
       capabilities = "offsetEncoding = 'utf-8'";
