@@ -17,4 +17,5 @@
   colorschemes.gruvbox = {
     enable = true;
   };
-}
+
+  }
