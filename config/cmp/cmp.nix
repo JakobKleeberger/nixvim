@@ -6,7 +6,7 @@
       autoEnableSources = true;
       settings = {
         experimental = {
-          ghost_text = true;
+          ghost_text = false;
         };
         snippet = {
           expand = "luasnip";
@@ -19,14 +19,21 @@
           { name = "rg"; }
           { name = "nvim_lua"; }
           { name = "git"; }
+          { name = "copilot"; }
         ];
 
         mapping = {
           "<C-j>" = "cmp.mapping.select_next_item()";
           "<C-k>" = "cmp.mapping.select_prev_item()";
 
-          "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
-          "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+          "<Tab>" =
+            "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+          "<S-Tab>" =
+            "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+          "<Down>" =
+            "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+          "<Up>" =
+            "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
 
           "<C-e>" = "cmp.mapping.abort()";
           "<C-f>" = "cmp.mapping.scroll_docs(4)";
