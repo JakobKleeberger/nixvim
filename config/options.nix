@@ -1,9 +1,5 @@
 {
   config = {
-    clipboard = {
-      providers.wl-copy.enable = true;
-    };
-
     # Set Leader key to space
     globals.mapleader = " ";
 
