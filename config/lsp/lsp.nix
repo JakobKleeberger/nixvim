@@ -81,6 +81,6 @@
         ];
       };
     };
-    rust-tools.enable = true;
+    rustaceanvim.enable = true;
   };
 }
