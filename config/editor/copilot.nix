@@ -10,6 +10,11 @@
 
   keymaps = [
     {
+      key = "<leader>cca";
+      action = "<cmd>CopilotChatToggle<CR>";
+      options.desc = "Toggle CopilotChat";
+    }
+    {
       key = "<leader>ccq";
       action.__raw = ''
         function()
