@@ -19,7 +19,6 @@
           { name = "rg"; }
           { name = "nvim_lua"; }
           { name = "git"; }
-          { name = "copilot"; }
         ];
 
         mapping = {
