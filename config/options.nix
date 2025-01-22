@@ -3,27 +3,28 @@
     # Set Leader key to space
     globals.mapleader = " ";
 
-    opts = {
-      # Show line numbers
-      number = true;
+    performance = {
+      byteCompileLua = {
+        enable = true;
+        nvimRuntime = true;
+        configs = true;
+        plugins = true;
+      };
+    };
 
-      # Show relative line numbers
+    opts = {
+      # Enable relative line numbers
+      number = true;
       relativenumber = true;
 
-      # Number of spaces that represent a <TAB>
+      # Set tabs to 2 spaces
       tabstop = 2;
       softtabstop = 2;
-
-      # Show tabline always
-      showtabline = 2;
-
-      # Use spaces instead of tabs
+      showtabline = 0;
       expandtab = true;
 
-      # Enable smart indentation
+      # Enable auto indenting and set it to spaces
       smartindent = true;
-
-      # Number of spaces to use for each step of (auto)indent
       shiftwidth = 2;
 
       # Enable break indent
@@ -50,8 +51,11 @@
       # Disable spell checking
       spell = false;
 
-      # Disable swap file creation
+      # Enable persistent undo history
       swapfile = false;
+      autoread = true;
+      backup = false;
+      undofile = true;
 
       # Time in milliseconds to wait for a mapped sequence to complete
       timeoutlen = 300;
@@ -82,6 +86,10 @@
 
       ignorecase = true;
       smartcase = true;
+
+      # Set encoding type
+      encoding = "utf-8";
+      fileencoding = "utf-8";
 
       # Remove EOB
       fillchars = {

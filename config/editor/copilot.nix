@@ -3,9 +3,6 @@
     copilot-chat = {
       enable = true;
     };
-    copilot-cmp = {
-      enable = true;
-    };
   };
 
   keymaps = [
