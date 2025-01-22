@@ -3,9 +3,8 @@
     enable = true;
     mockDevIcons = true;
     modules = {
-      icons =
-        {
-        };
+      icons = {
+      };
     };
   };
 }
