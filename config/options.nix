@@ -34,7 +34,7 @@
       cursorline = true;
 
       # Minimum number of screen lines to keep above and below the cursor
-      scrolloff = 8;
+      scrolloff = 10;
 
       # Enable mouse support
       mouse = "a";
@@ -90,6 +90,9 @@
       # Set encoding type
       encoding = "utf-8";
       fileencoding = "utf-8";
+
+      # Show sign column
+      signcolumn = "yes";
 
       # Remove EOB
       fillchars = {
