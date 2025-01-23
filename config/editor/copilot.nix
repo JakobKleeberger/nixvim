@@ -27,8 +27,7 @@
       action.__raw = ''
         function()
           local actions = require("CopilotChat.actions")
-          require("CopilotChat.integrations.telescope").pick(actions.prompt_actions())
-        end'';
+          require("CopilotChat.integrations.fzflua").pick(actions.prompt_actions()) end'';
       options.desc = "CopilotChat - Prompt actions";
     }
   ];
