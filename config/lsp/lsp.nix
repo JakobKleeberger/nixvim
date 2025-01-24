@@ -1,5 +1,6 @@
 {
   plugins = {
+    typescript-tools.enable = true;
     lsp = {
       enable = true;
       capabilities = "offsetEncoding = 'utf-8'";
@@ -20,16 +21,6 @@
         tailwindcss.enable = true;
         eslint.enable = true;
         html.enable = true;
-        ts_ls = {
-          enable = true;
-          autostart = true;
-          filetypes = [
-            "javascript"
-            "javascriptreact"
-            "typescript"
-            "typescriptreact"
-          ];
-        };
       };
       keymaps = {
         silent = true;
