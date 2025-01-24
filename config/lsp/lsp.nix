@@ -16,6 +16,13 @@
             '';
           };
         };
+        statix = {
+          enable = true;
+          autostart = true;
+          filetypes = [
+            "nix"
+          ];
+        };
         gopls.enable = true;
         templ.enable = true;
         tailwindcss.enable = true;
