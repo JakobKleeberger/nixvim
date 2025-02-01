@@ -1,17 +1,14 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   imports = [
     ./cmp
     ./coding
     ./editor
     ./lsp
-    ./options.nix
     ./snippets
     ./ui
     ./utils
+    ./options.nix
   ];
 
   extraPackages = with pkgs; [ ripgrep ];
-
-  colorschemes.gruvbox.enable = true;
 }

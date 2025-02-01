@@ -1,0 +1,5 @@
+{
+  plugins.wezterm = {
+    enable = true;
+  };
+}

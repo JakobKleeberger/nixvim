@@ -10,7 +10,10 @@
   };
 
   outputs =
-    { nixvim, flake-parts, ... }@inputs:
+    { nixvim
+    , flake-parts
+    , ...
+    } @ inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
         "x86_64-linux"
@@ -25,15 +28,13 @@
       ];
 
       perSystem =
-        {
-          pkgs,
-          system,
-          config,
-          ...
+        { pkgs
+        , config
+        , ...
         }:
         let
-          nixvimLib = nixvim.lib.${system};
-          nixvim' = nixvim.legacyPackages.${system};
+          nixvimLib = nixvim.lib."unstable";
+          nixvim' = nixvim.legacyPackages."unstable";
           nixvimModule = {
             inherit pkgs;
             module = import ./config; # import the module directly

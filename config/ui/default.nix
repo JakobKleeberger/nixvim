@@ -1,12 +1,8 @@
 {
   imports = [
-    ./bufferline.nix
     ./dressing.nix
-    ./fzf-lua.nix
+    ./cursorline.nix
     ./lualine.nix
-    ./mini-icons.nix
-    ./mini-indentscope.nix
-    ./noice.nix
-    ./notify.nix
+    ./web-devicons.nix
   ];
 }
