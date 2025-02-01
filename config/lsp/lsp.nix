@@ -3,8 +3,8 @@
     enable = true;
 
     servers = {
-      lua-ls.enable = true;
-      nil-ls.enable = true;
+      lua_ls.enable = true;
+      nil_ls.enable = true;
       nixd = {
         enable = true;
         settings.options = {
@@ -16,7 +16,7 @@
       pyright.enable = true;
       cmake.enable = true;
       clangd.enable = true;
-      rust-analyzer = {
+      rust_analyzer = {
         enable = true;
         installCargo = true;
         installRustc = true;

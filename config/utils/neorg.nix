@@ -3,7 +3,7 @@
     enable = true;
     telescopeIntegration.enable = true;
 
-    settingsOptions = {
+    settings = {
       load = {
         "core.defaults" = { };
         "core.completion" = { };
