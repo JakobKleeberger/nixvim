@@ -1,5 +1,9 @@
 {
   plugins.neorg.enable = true;
+
+  plugins.neorg = {
+    autoLoad = true;
+  };
   # plugins.neorg = {
   #   enable = true;
   #   telescopeIntegration.enable = true;
@@ -35,4 +39,6 @@
   #     };
   #   };
   # };
+
+  plugins.orgmode.enable = true;
 }
