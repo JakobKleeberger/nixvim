@@ -3,7 +3,7 @@
   plugins.treesitter.enable = true;
 
   plugins.treesitter = {
-    folding = true;
+    # folding = true;
     grammarPackages = config.plugins.treesitter.package.passthru.allGrammars ++ [
       pkgs.tree-sitter-grammars.tree-sitter-norg-meta
       pkgs.tree-sitter-grammars.tree-sitter-nu
@@ -33,14 +33,9 @@
         };
       };
 
-      indent = {
-        enable = true;
-      };
+      # indent = {
+      #   enable = true;
+      # };
     };
-
-    # grammarPackages = with pkgs.tree-sitter-grammars; [
-    #   tree-sitter-norg
-    #   tree-sitter-norg-meta
-    # ];
   };
 }
